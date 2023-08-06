@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/*ESTILO GENERAL*/
+/*LAYOUT*/
+/*VARIABLES PARA PRODUCTOS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 150vh;
+  background-color: rgba(235, 170, 65, 0.3803921569);
+}
+
+header {
+  height: 51vh;
+  background-image: url(../assets/images/cab.png);
+  background-repeat: no-repeat;
+  background-position-y: -25em;
+  background-color: #EEE6E3;
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  background-color: rgba(201, 168, 137, 0.8901960784);
+}
+
+main {
+  height: 94vh;
+}
+
+footer {
+  height: 5vh;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: brown;
+  font-family: "Pacifico", cursive;
+  display: inline-flex;
+  justify-content: center;
+}
+
+p {
+  color: black;
+}
+
+@media (max-width: 320px) {
+  header {
+    background-position: 47em 6em;
+  }
+}
+/*ESTILO PARA LA PAGINA INICIO*/
+main #seccion-video {
+  display: flex;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+}
+
+#introduccion {
+  font-size: 22px;
+  font-family: "Pacifico", cursive;
+}
+
+/*ESTILO PARA LA PAGINA PRODUCTOS*/
+#mainDeProductos div img {
+  width: 20em;
+  height: 15em;
+  margin-top: 13px;
+  margin-left: 0.85em;
+  padding: 0;
+  border: 7px double #9b703e;
+  border-radius: 20px;
+}
+
+#footerDeProductos {
+  position: relative;
+  top: 27em;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #headerDeProductos #tituloDeProductos {
+    position: relative;
+    padding: 0;
+    left: 2em;
+  }
+  #footerDeProductos {
+    position: relative;
+    top: 60em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #footerDeProductos {
+    top: 11em;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  #headerDeProductos {
+    background-position: 10em;
+  }
+  #headerDeProductos nav div div ul {
+    margin-top: 5px;
+  }
+  #mainDeProductos div img {
+    width: 18.5em;
+    height: 11em;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  #mainDeProductos div p {
+    padding-left: 22px;
+    margin-top: 1em;
+  }
+  #footerDeProductos p {
+    margin-top: 23px;
+  }
+}
+#mainDeProductos div p {
+  font-size: 15.5px;
+  font-family: "Pacifico", cursive;
+}
+
+/*ESTILO PARA CURSOS*/
+#bodyDeCursos {
+  height: 200vh;
+}
+
+.tituloDosCursos {
+  font-family: "Caveat", cursive;
+  color: brown;
+}
+
+#mainDeCursos {
+  height: 140vh;
+}
+#mainDeCursos div img {
+  width: 20em;
+  height: 15em;
+  margin-top: 13px;
+  margin-left: 0.85em;
+  padding: 0;
+  border: 7px double #9b703e;
+  border-radius: 20px;
+}
+
+#alfareria, #diseño, #moldes {
+  display: grid !important;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  height: 15em;
+}
+
+#pieDeCursos {
+  height: 9vh;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .parrafo_cursos {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  #pieDeCursos {
+    position: relative;
+    top: 38em;
+  }
+}
+.parrafo_cursos {
+  font-family: "Pacifico", cursive;
+}
+
+/*ESTILO PARA IMAGENES*/
+#cuerpoDeImagenes {
+  width: 100.8%;
+}
+
+#cuerpoDeImagenes img {
+  width: 25em;
+  height: 16em;
+  margin-top: 13px;
+  margin-left: 2em;
+  padding: 0;
+  border: 7px double #9b703e;
+  border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  #cuerpoDeImagenes img {
+    width: 17em;
+    height: 13em;
+  }
+}
+@media (min-width: 768px) and (max-width: 904px) {
+  #pieDeImagenes {
+    position: relative;
+    top: 6em;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1285px) {
+  #pieDeImagenes {
+    position: relative;
+    top: 16em;
+  }
+}
+@media (min-width: 603px) and (max-width: 767px) {
+  #pieDeImagenes {
+    position: relative;
+    top: 6em;
+  }
+}
+@media (min-width: 320px) and (max-width: 602px) {
+  #pieDeImagenes {
+    position: relative;
+    top: 48em;
+  }
+}
+/*ESTILO PARA CONTACTOS*/
+#contenedor {
+  width: 46em;
+  padding-top: 5em;
+}
+
+/*# sourceMappingURL=style.css.map */

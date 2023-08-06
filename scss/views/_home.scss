@@ -1,0 +1,15 @@
+main{
+    #seccion-video{
+        display: flex;
+        align-items: $titulo-centrado;
+    }
+}
+
+video{
+    width: 100%;
+}
+
+#introduccion{
+    font-size: 22px;
+    font-family: $fuente-parrafo;
+}
